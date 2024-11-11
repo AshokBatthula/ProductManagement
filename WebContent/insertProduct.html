@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container{
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    width: 600px;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:20px;
+    border-style: solid;
+    margin-top: 20%;
+    }
+    .button{
+        margin-top:20px;
+        height:30px;
+        width:100px;
+
+    }
+    .move{
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: solid;
+        background-color: yellow;
+        
+    }
+    </style>
+<meta charset="ISO-8859-1">
+<title>Insert New Book</title>
+</head>
+<body style="background: linear-gradient(to top right,#fc2cc7 0%,#6c4079 100%)">
+    <marquee  behaviour="scroll" class="move" direction="right">  
+        <b> Enter The Product Id Number Carefully!!!..... </b>
+        </marquee> 
+	<center><div class="container">
+	<form action="ProductInsertServlet">
+        <center>
+		<table border="1">
+			<tr>
+				<td>Product Id</td>
+				<td align="center"><input type="text" name="id"></td>
+			<tr>
+				<td>Product Name</td>
+				<td align="center"><input type="text" name="name"></td>
+			<tr>
+				<td>Product brand</td>
+				<td align="center"><input type="text" name="author"></td>
+			<tr>
+				<td>Product price</td>
+				<td align="center"><input type="text" name="price"></td>
+		
+			
+		</table>
+    </center>
+        <input type="submit" value="Buy" class="button">
+        <input type="reset" value="clear" class="button">
+   
+	</form>
+</div>
+</center>
+
+</body>
+</html>
